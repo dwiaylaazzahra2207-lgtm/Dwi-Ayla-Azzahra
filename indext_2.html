@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Ekskul</title>
+</head>
+<body>
+    <center>
+    <h1>Formulir Pendaftaran Siswa Baru</h1>
+    </center>
+    <hr>
+    <br><br><br>
+
+     <form action="proses.php" method="POST" enctype="multipart/form-data">
+     <label for="nama">Nama Lengkap:</label><br>
+     <input type="text" id="nama" name="nama" required><br><br>
+
+     <label for="email">Email:</label><br>
+     <input type="email" id="email" name="email" required><br><br>
+
+     <label for="Kelas">Kelas:</label><br>
+     <input type="Kelas" id="Kelas" name="Kelas" required><br><br>
+
+     <label for="Jurusan">Jurusan:</label><br>
+     <input type="Jurusan" id="Jurusan" name="Jurusan" required><br><br>
+        <br><br>
+        
+     <label>Ekskul:</label><br>
+     <input type="checkbox" name="Ekskul[]" value="Pramuka">Pramuka <br>
+     <input type="checkbox" name="Ekskul[]" value="Paskibra">Paskibra <br>
+     <input type="checkbox" name="Ekskul[]" value="PMR"> PMR <br>
+     <input type="checkbox" name="Ekskul[]" value="Osis"> Osis <br>
+     <input type="checkbox" name="Ekskul[]" value="Badminton">Badminton <br><br>
+        <br><br>
+
+      <label for="foto">Upload Foto:</label><br>
+    <input type="file" name="foto" accept="image/*"><br><br>
+    <br><br>
+
+    <label for="alamat">Alamat:</label><br>
+     <textarea name="alamat" id="alamat" rows="4" cols="40"
+required></textarea><br>
+
+     </select><br><br>
+
+
+<input type="submit" value="Kirim">
+</form>
+</body>
+</html>
